@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common';
 })
 export class UiBlocksComponent {
   // https://stackoverflow.com/questions/34641281/how-to-add-class-to-host-element
-  @HostBinding('class') classes = 'someClass1';
+  @HostBinding('class') public classes = 'someClass1';
 }
