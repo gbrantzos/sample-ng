@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UiBlocksComponent } from 'ui-blocks';
 
@@ -11,5 +11,5 @@ import { UiBlocksComponent } from 'ui-blocks';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'oms';
+  public title = 'oms';
 }

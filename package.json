@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "lint:fix": "npm run lint -- --fix",
     "beautify:all": "npx js-beautify --type html -r --config .jsbeautifyrc --file '{apps,libs}/**/*.html'",
-    "prettier:all": "npx prettier --write '{apps,libs}/**/*.ts'"
+    "prettier:all": "npx prettier --write '{apps,libs}/**/*.ts'",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -52,6 +53,7 @@
     "ng-packagr": "^16.2.0",
     "prettier": "^3.0.3",
     "prettier-eslint": "^15.0.1",
-    "typescript": "~5.1.3"
+    "typescript": "~5.1.3",
+    "husky": "^8.0.0"
   }
 }
