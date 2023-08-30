@@ -24,7 +24,8 @@
             "prefix": "oms",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@typescript-eslint/adjacent-overload-signatures": "warn"
       }
     },
     {

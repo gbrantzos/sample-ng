@@ -8,7 +8,7 @@ describe('UiBlocksComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [UiBlocksComponent],
+      imports: [UiBlocksComponent]
     });
     fixture = TestBed.createComponent(UiBlocksComponent);
     component = fixture.componentInstance;

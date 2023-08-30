@@ -1,0 +1,4 @@
+{
+    "*.ts": "npx prettier --write",
+    "*.html": "npx js-beautify --type html -r"
+}

@@ -32,13 +32,122 @@
             "style": "kebab-case"
           }
         ],
-        "@typescript-eslint/member-ordering": "error",
+        "@typescript-eslint/member-ordering": [
+          "error",
+          {
+            "default": [
+              "decorated-field",
+              "public-field",
+              "public-readonly-field",
+              "protected-field",
+              "protected-readonly-field",
+              "private-field",
+              "private-readonly-field",
+              "constructor",
+              "method"
+            ]
+          }
+        ],
         "@typescript-eslint/explicit-member-accessibility": [
           "error",
           {
             "overrides": {
               "constructors": "no-public"
             }
+          }
+        ],
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "enumMember",
+            "format": [
+              "PascalCase",
+              "UPPER_CASE"
+            ]
+          },
+          {
+            "selector": "default",
+            "format": [
+              "camelCase"
+            ],
+            "filter": {
+              "match": false,
+              "regex": "^\\d+$"
+            },
+            "leadingUnderscore": "forbid",
+            "trailingUnderscore": "forbid"
+          },
+          {
+            "selector": "objectLiteralProperty",
+            "modifiers": [
+              "requiresQuotes"
+            ],
+            "format": null
+          },
+          {
+            "selector": "objectLiteralProperty",
+            "format": [
+              "camelCase",
+              "PascalCase"
+            ]
+          },
+          {
+            "selector": "variable",
+            "format": [
+              "camelCase"
+            ],
+            "leadingUnderscore": "forbid",
+            "trailingUnderscore": "forbid"
+          },
+          {
+            "selector": "variable",
+            "format": [
+              "camelCase",
+              "PascalCase",
+              "UPPER_CASE"
+            ],
+            "modifiers": [
+              "const"
+            ]
+          },
+          {
+            "selector": "classProperty",
+            "format": [
+              "camelCase"
+            ],
+            "leadingUnderscore": "allow"
+          },
+          {
+            "selector": "classProperty",
+            "modifiers": [
+              "readonly"
+            ],
+            "format": [
+              "camelCase",
+              "PascalCase",
+              "UPPER_CASE"
+            ]
+          },
+          {
+            "selector": "typeLike",
+            "format": [
+              "PascalCase"
+            ]
+          }
+        ],
+        "sort-imports": [
+          "error",
+          {
+            "ignoreCase": false,
+            "ignoreDeclarationSort": false,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": [
+              "none",
+              "all",
+              "multiple",
+              "single"
+            ],
+            "allowSeparatedGroups": false
           }
         ]
       }

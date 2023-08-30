@@ -1,0 +1,7 @@
+{
+  "indent_size": 2,
+  "indent_with_tabs": false,
+  "end_with_newline": true,
+  "preserve_newlines": false,
+  "wrap_attributes": "force-aligned"
+}

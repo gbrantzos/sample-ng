@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: ` <p>ui-blocks works! YEAH!</p> `,
-  styles: [],
+  styles: []
 })
 export class UiBlocksComponent {
   // https://stackoverflow.com/questions/34641281/how-to-add-class-to-host-element
