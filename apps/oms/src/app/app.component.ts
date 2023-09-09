@@ -1,15 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { UiBlocksComponent } from 'ui-blocks';
+import { RouterListenerService } from './core/services/router-listener.service';
 
 @Component({
   selector: 'oms-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, UiBlocksComponent],
+  imports: [CommonModule, RouterLink, RouterOutlet, UiBlocksComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   public title = 'oms';
+  protected navigating$ = inject(RouterListenerService).navigating$;
 }
