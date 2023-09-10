@@ -1,8 +1,10 @@
+
+
 /* Based on https://stackoverflow.com/a/75839091/3410871 */
 
 @use '@angular/material' as mat;
 
-$open-sans-typography: mat.define-typography-config($font-family: '"Open Sans", sans-serif');
+$open-sans-typography: mat.define-typography-config($font-family: 'Comfortaa, sans-serif');
 @include mat.typography-hierarchy($open-sans-typography);
 
 $app-theme: mat.define-light-theme((
@@ -11,6 +13,8 @@ $app-theme: mat.define-light-theme((
 @include mat.all-component-themes($app-theme);
 
 /* You can add global styles to this file, and also import other style files */
+@import "assets/styles/comfortaa";
+@import "assets/styles/fontawesome";
 
 html, body {
   height: 100%;
@@ -18,7 +22,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: Open Sans, "Helvetica Neue", sans-serif;
+  font-family: Confortaa, "Helvetica Neue", sans-serif;
 }
 
 [hidden], .hidden {

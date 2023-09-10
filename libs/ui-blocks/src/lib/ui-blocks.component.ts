@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'ubl-ui-blocks',
   standalone: true,
   imports: [CommonModule],
-  template: ` <p>ui-blocks works! YEAH!</p> `,
+  template: ` <p><i class="fa-solid fa-bars"></i> ui-blocks works!</p> `,
   styles: []
 })
 export class UiBlocksComponent {
