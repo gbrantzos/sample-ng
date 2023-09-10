@@ -1,1 +1,29 @@
+/* Based on https://stackoverflow.com/a/75839091/3410871 */
+
+@use '@angular/material' as mat;
+
+$open-sans-typography: mat.define-typography-config($font-family: '"Open Sans", sans-serif');
+@include mat.typography-hierarchy($open-sans-typography);
+
+$app-theme: mat.define-light-theme((
+  typography: $open-sans-typography
+));
+@include mat.all-component-themes($app-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Open Sans, "Helvetica Neue", sans-serif;
+}
+
+[hidden], .hidden {
+  //display: none !important;
+  visibility: hidden;
+}
+
+

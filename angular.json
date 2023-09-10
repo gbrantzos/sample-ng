@@ -37,6 +37,7 @@
               "apps/oms/src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "apps/oms/src/styles.scss"
             ],
             "scripts": []
@@ -100,6 +101,7 @@
               "apps/oms/src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "apps/oms/src/styles.scss"
             ],
             "scripts": []

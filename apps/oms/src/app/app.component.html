@@ -1,4 +1,7 @@
-<ubl-ui-blocks class="some1 some2"
-               *ngIf='navigating$ | async'></ubl-ui-blocks>
-<a routerLink="/orders"> Orders </a> &nbsp; <a routerLink="/orders/edit/0"> New </a>
+<mat-progress-bar mode='indeterminate'
+                  color='accent'
+                  [hidden]='(navigating$ | async) === false' />
+<ubl-ui-blocks class='some1 some2'>
+</ubl-ui-blocks>
+<a routerLink='/orders'> Orders </a> &nbsp; <a routerLink='/orders/edit/0'> New </a>
 <router-outlet></router-outlet>
