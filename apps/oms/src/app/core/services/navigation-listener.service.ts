@@ -14,7 +14,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class RouterListenerService {
+export class NavigationListenerService {
   public navigating$: Observable<boolean>;
   private navigationChanged: BehaviorSubject<boolean>;
 

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RouterListenerService } from './router-listener.service';
+import { NavigationListenerService } from './navigation-listener.service';
 
 describe('RouterListenerService', () => {
-  let service: RouterListenerService;
+  let service: NavigationListenerService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(RouterListenerService);
+    service = TestBed.inject(NavigationListenerService);
   });
 
   it('should be created', () => {

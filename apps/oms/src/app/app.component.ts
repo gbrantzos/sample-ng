@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { UiBlocksComponent } from 'ui-blocks';
-import { RouterListenerService } from './core/services/router-listener.service';
+import { NavigationListenerService } from './core/services/navigation-listener.service';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @Component({
@@ -14,5 +14,5 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 })
 export class AppComponent {
   public title = 'oms';
-  protected navigating$ = inject(RouterListenerService).navigating$;
+  protected navigating$ = inject(NavigationListenerService).navigating$;
 }
