@@ -18,6 +18,7 @@
     "lint-staged": "git add . && npx lint-staged",
     "beautify:all": "npx js-beautify --type html -r --config .jsbeautifyrc --file '{apps,libs}/**/*.html'",
     "prettier:all": "npx prettier --write '{apps,libs}/**/*.ts'",
+    "bump-version": "npx bump --commit 'Release v%s'",
     "prepare": "husky install"
   },
   "private": true,
