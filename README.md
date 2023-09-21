@@ -1,5 +1,7 @@
 # PrxSample
 
+[![Angular CI](https://github.com/gbrantzos/sample-ng/actions/workflows/angular.yml/badge.svg)](https://github.com/gbrantzos/sample-ng/actions/workflows/angular.yml)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
 ## Development server

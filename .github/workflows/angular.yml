@@ -38,7 +38,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: npm install and npm run CI commands
+      - name: NPM CI commands
         run: |
           npm ci
           npm run test:ci
